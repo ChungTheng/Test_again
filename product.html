@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #3c1d05;
+            color: white;
+        }
+        .product-card{
+            width: 280px;
+            padding: 20px;
+        }
+        .product-card img{
+            width: 100%;
+            height: 300px;
+        }
+        .product-card img:hover{
+            transform: scale(1.1);
+        }
+        .title:hover, .price:hover{
+            transition: 100ms;
+            color: hotpink;
+        }
+        .price{
+            margin-top: 20px;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        .title{
+            font-size: 20px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+        .btn{
+            background-color: yellowgreen;
+            padding: 12px 20px;
+            font-size: 20px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-self: center;
+            gap: 6px;
+        }
+       .btn:hover{
+            transform: scale(1.1);
+            transition: 100ms;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png" alt="product image">
+        <p class="price">$100.99</p>
+        <p class="title">Backpack</p>
+        <button class="btn">
+          <i data-lucide="shopping-cart"></i>  Add to Cart
+        </button>
+    </div>
+     <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
